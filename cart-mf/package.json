@@ -1,5 +1,5 @@
 {
-  "name": "@ecommerce/bakery",
+  "name": "@ecommerce/cart",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -49,7 +49,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@ecommerce/bakery": "file:",
+    "@ecommerce/cart": "file:",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
@@ -62,5 +62,5 @@
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
   },
-  "types": "dist/ecommerce-bakery.d.ts"
+  "types": "dist/ecommerce-cart.d.ts"
 }

@@ -18,6 +18,6 @@ module.exports = (webpackConfigEnv, argv) => {
         "Access-Control-Allow-Origin": "*",
       },
     },
-    externals: ["react", "react-dom", "antd", "@ant-design/icons", "react-router-dom", "@ecommerce/cart"],
+  //  externals: ["react", "react-dom", "antd", "@ant-design/icons", "react-router-dom", "@ecommerce/cart"],
   });
 };

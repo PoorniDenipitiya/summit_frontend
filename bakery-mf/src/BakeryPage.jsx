@@ -9,7 +9,7 @@ import fishpatty from '../../assets/fishpatty.jpg';
 import vegetablesamosa from '../../assets/vegetablesamosa.jpg';
 import './BakeryPage.css';
 //import CartNotification from '../../cart-mf/src/CartNotification';
-import { CartNotification } from '@ecommerce/cart';
+//import { CartNotification } from '@ecommerce/cart';
 
 const { Meta } = Card;
 

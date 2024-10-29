@@ -28,4 +28,4 @@ const CartNotification = ({ item }) => {
 };
 
 export default CartNotification;
-export { default as CartNotification } from './CartNotification';
+//export { default as CartNotification } from './CartNotification';

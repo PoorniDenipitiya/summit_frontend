@@ -44,14 +44,20 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"
-        
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "single-spa-layout": "https://cdn.jsdelivr.net/npm/single-spa-layout@1.6.0/dist/system/single-spa-layout.min.js",
+        "@ecommerce/root-config": "//localhost:9000/ecommerce-root-config.js",
+        "@ecommerce/home": "//localhost:8080/ecommerce-home.js",
+        "@ecommerce/categories": "//localhost:8081/ecommerce-categories.js",
+        "@ecommerce/cart": "//localhost:8083/ecommerce-cart.js",
+        "@ecommerce/bakery": "//localhost:8082/ecommerce-bakery.js",
+        "@ecommerce/layout": "//localhost:8084/ecommerce-layout.js"
       }
     }
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.24.7/dist/antd.min.css">
+  
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
    <!--"@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"-->
@@ -60,13 +66,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@ecommerce/root-config": "//localhost:9000/ecommerce-root-config.js",
-        "ecommerce/home": "//localhost:8080/ecommerce-home.js",
-        "ecommerce/categories": "//localhost:8081/ecommerce-categories.js",
-        "@ecommerce/cart": "//localhost:8083/ecommerce-cart.js",
-        "@ecommerce/bakery": "//localhost:8082/ecommerce-bakery.js",
-        "@ecommerce/layout": "//localhost:8084/ecommerce-layout.js"
-
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js",
+        "single-spa-react": "https://cdn.jsdelivr.net/npm/single-spa-react@4.6.1/lib/system/single-spa-react.min.js",
+        "antd": "https://cdn.jsdelivr.net/npm/antd@4.24.7/dist/antd.min.js"
       }
     }
   </script>

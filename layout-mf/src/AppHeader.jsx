@@ -1,4 +1,5 @@
 import React from "react";
+//import ReactDOM from "react-dom";
 import { Layout, Menu, Avatar, Button, Badge, Popover } from "antd";
 import { UserOutlined, ShoppingCartOutlined, CloseOutlined, LogoutOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -7,9 +8,9 @@ import "./AppHeader.css";
 const { Header } = Layout;
 
 const AppHeader = ({ user, cart, onSignOut, removeFromCart }) => {
-  const cartCount = cart.length;
+  //const cartCount = cart.length;
 
-  const cartContent = (
+  /*const cartContent = (
     <div className="cart-preview">
       {cart.map((item) => (
         <div key={item.id} className="cart-item">
@@ -43,7 +44,7 @@ const AppHeader = ({ user, cart, onSignOut, removeFromCart }) => {
       </Button>
     </div>
   );
-
+*/
   return (
     <Header className="app-header">
       <div className="logo">Foodies</div>
@@ -63,7 +64,7 @@ const AppHeader = ({ user, cart, onSignOut, removeFromCart }) => {
         <Menu.Item key="4">Contact</Menu.Item>
       </Menu>
       <div className="header-icons" style={{ display: 'flex', alignItems: 'center' }}>
-  <Popover
+ {/* <Popover
     content={cartContent}
     title="Your Cart"
     trigger="hover"
@@ -71,7 +72,7 @@ const AppHeader = ({ user, cart, onSignOut, removeFromCart }) => {
   >
     <Badge count={cartCount} showZero >
       <ShoppingCartOutlined style={{ fontSize: '24px', color: 'black' }} />
-      {/*className="icon"*/}
+      {/*className="icon"
     </Badge>
   </Popover>
   {user ? (
@@ -85,9 +86,12 @@ const AppHeader = ({ user, cart, onSignOut, removeFromCart }) => {
   ) : (
     <span>Please sign in</span>
   )}
+    */}
 </div>
     </Header>
   );
 };
+
+//ReactDOM.render(<AppHeader />, document.getElementById("appheader"));
 
 export default AppHeader;

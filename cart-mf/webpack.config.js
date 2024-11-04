@@ -21,6 +21,6 @@ module.exports = (webpackConfigEnv, argv) => {
     output: {
       libraryTarget: "system",
     },
-    externals: ["react", "react-dom", "antd", "@ant-design/icons", "react-router-dom"],
+    
 });
 };

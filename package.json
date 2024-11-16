@@ -1,0 +1,26 @@
+{
+    "name": "summit",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start:auth": "cd auth-mf && npm run start",
+        "start:bakery": "cd bakery-mf && npm run start",
+        "start:cart": "cd cart-mf && npm run start",
+        "start:categories": "cd categories-mf && npm run start",
+        "start:home": "cd home-mf && npm run start",
+        "start:layout": "cd layout-mf && npm run start",
+        "start:root": "cd root-config && npm run start",
+        "start:all": "concurrently \"npm run start:root\" \"npm run start:auth\" \"npm run start:layout\" \"npm run start:home\" \"npm run start:categories\" \"npm run start:cart\" \"npm run start:bakery\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "babel-jest": "^29.7.0",
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "summit": "file:"
+    }
+}

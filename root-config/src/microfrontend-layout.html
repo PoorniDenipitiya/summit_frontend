@@ -16,24 +16,23 @@
   -->
 
   <main>
-    <route default>
-      <application name="@ecommerce/home"></application>
+    <route path="login">
+      <application name="auth"></application>
     </route>
     <route default>
-      <application name="@ecommerce/categories"></application>
+      <application name="layout"></application>
+      <application name="cart"></application>
+      <application name="home"></application>
+      <application name="categories"></application>
     </route>
-    <route default>
-      <application name="@ecommerce/layout"></application>
+    <route path="bakery">
+      <application name="layout"></application>
+      <application name="cart"></application>
+      <application name="home"></application>
+      <application name="bakery"></application>
     </route>
-
     <!-- Load other applications after cart-mf 
-    <route default>
-      <application name="@ecommerce/cart"></application>
-      <application name="@ecommerce/bakery"></application>
-      <application name="@ecommerce/categories"></application>
-      <application name="@ecommerce/home"></application>
-      <application name="@ecommerce/layout"></application>
-    </route>
+   
   -->
   </main>
 </single-spa-router>

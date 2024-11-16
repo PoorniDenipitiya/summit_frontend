@@ -1,7 +1,7 @@
 {
   "name": "@ecommerce/categories",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --port 8081",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
@@ -61,6 +61,5 @@
     "react-router-dom": "^6.27.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
-  },
-  "types": "dist/ecommerce-categories.d.ts"
+  }
 }

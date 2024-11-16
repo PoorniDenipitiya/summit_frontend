@@ -1,7 +1,7 @@
 {
   "name": "@ecommerce/auth",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --port 8085",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
@@ -12,8 +12,7 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "prepare": "husky install",
-    "coverage": "cross-env BABEL_ENV=test jest --coverage",
-    "build:types": "tsc"
+    "coverage": "cross-env BABEL_ENV=test jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
@@ -56,18 +55,11 @@
     "@aws-amplify/core": "^6.5.1",
     "@aws-amplify/ui-react": "^6.5.5",
     "@ecommerce/auth": "file:",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^22.8.7",
-    "@types/react": "^17.0.83",
-    "@types/react-dom": "^17.0.25",
-    "@types/systemjs": "^6.1.1",
-    "@types/webpack-env": "^1.16.2",
     "aws-amplify": "^6.8.0",
     "axios": "^1.7.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
-  },
-  "types": "dist/ecommerce-auth.d.ts"
+  }
 }
